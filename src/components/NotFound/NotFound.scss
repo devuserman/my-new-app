@@ -1,0 +1,62 @@
+$error-color: #FF6060;
+$error-ft-fmly: Montserrat;
+
+.error-page {
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 0px;
+
+
+
+.error-image {
+    width: 597px;
+    max-width: 263px;
+    margin-bottom: 139px;
+}
+
+.texte-error {
+    font-size: 36px;
+    color: $error-color;
+    font-family: $error-ft-fmly;
+    padding-bottom: 139px;
+}
+
+.link-error {
+    font-size: 18px;
+    color: $error-color;
+    font-family: $error-ft-fmly;
+
+}
+
+@media screen and (max-width:992px) {
+    .error-image {
+        max-width: 350px;
+    }
+
+    .texte-error {
+        display: flex;
+        text-align: center;
+        font-size: 24px;
+        padding-top: 30px;
+        padding-bottom: 135px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .error-image {
+        max-width: 250px;
+    }
+
+    .texte-error {
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 120px;
+    }
+
+    .link-error {
+        font-size: 14px;
+    }
+}
+}
