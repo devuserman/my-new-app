@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../Common/Header.js';
 import Footer from '../Common/Footer.js';
-import './NotFound.scss';
+import './Error.scss';
 import image from  './404.png';
 
 function NotFound() {

@@ -8,14 +8,15 @@ import Header from '../Common/Header';
 import Footer from '../Common/Footer';
 
 function LogementPage() {
-  const { id } = useParams();
-  const logement = data.find((item) => item.id === id);
+  const { id } = useParams(); //permet de récupérer l'identifiant (URL)
+  const logement = data.find((item) => item.id === id); // cherche un élément correspond à la valeur récupérée de l'URL.
 
   const { title, location, tags, host, pictures } = logement;
 
+  //parseInt utilisé pour convertir une chaîne de caractères en un nombre entier
   const numericRating = parseInt(logement.rating);
 
-  const Rating = [];
+  const Rating = []; // génère une liste d'étoiles 
   for (let i = 1; i <= 5; i++) {
     if (i <= numericRating) {
       Rating.push(<span key={i} className="red-stars stars">&#9733;</span>);
@@ -25,7 +26,7 @@ function LogementPage() {
   }
 
   if (!logement) {
-    return <Navigate to="/*" />;
+    return <Navigate to="/*" />; //  redirige vers une page d'erreur 
   }
 
   return (

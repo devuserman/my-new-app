@@ -3,7 +3,6 @@ import Header from '../Common/Header';
 import Banner from '../Banner/banner';
 import Footer from '../Common/Footer';
 import Cards from '../Cards/Cards';
-import './Home_style.scss';
 import image_1 from '../Banner/image_1.png';
 
 

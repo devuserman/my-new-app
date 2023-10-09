@@ -11,7 +11,7 @@ function Banner(props) {
     </div>
   );
 }
-
+//PropTypes permet d'assurer la bonne réception et le bon type de données attendues par le composant, et ainsi la robustesse et la clarté du code.
 Banner.propTypes = {
   image: PropTypes.string.isRequired,
   largeHeight: PropTypes.bool.isRequired,

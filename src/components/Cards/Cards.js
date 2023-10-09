@@ -10,7 +10,7 @@ export default function Cards() {
   return (
     <section className="cards-logements">
       <div className="container">
-        {data.map((logement) => (
+        {data.map((logement) => (   //pour itérer sur les éléments d'un tableau.
           <Link className="accommodation-item" key={logement.id} to={`/logement/${logement.id}`}>
             <img className="accommodation-image" src={logement.cover} alt={logement.title} />
             <h2 className="accommodation-title">{logement.title}</h2>

@@ -1,9 +1,9 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home/Home';
-import LogementPage from './components/LogementPage/LogementPage';
-import NotFound from './components/NotFound/NotFound.js';
-import Apropos from './components/Apropos/Apropos'; 
+import Home from './components/page/Home';
+import LogementPage from './components/page/LogementPage';
+import NotFound from './components/Error/Error.js';
+import Apropos from './components/page/Apropos'; 
 import './App.css';
 
 function App() {

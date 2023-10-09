@@ -4,7 +4,7 @@ import logo_kasa from './Kasa.png';
 import './header.scss';
 
 function Header() {
-  // Récupérer l'URL actuelle avec le useLocation hook
+  // Récupérer l'URL actuelle avec le useLocation hook, utilisé pour gérer la classe "active"
   const location = useLocation();
 
   return (
