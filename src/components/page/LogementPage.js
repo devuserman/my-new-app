@@ -11,6 +11,11 @@ function LogementPage() {
   const { id } = useParams(); //permet de récupérer l'identifiant (URL)
   const logement = data.find((item) => item.id === id); // cherche un élément correspond à la valeur récupérée de l'URL.
 
+
+  if (!logement) {
+    return <Navigate to="/*" />; //  redirige vers une page d'erreur 
+  }
+  
   const { title, location, tags, host, pictures } = logement;
 
   //parseInt utilisé pour convertir une chaîne de caractères en un nombre entier
@@ -25,9 +30,7 @@ function LogementPage() {
     }
   }
 
-  if (!logement) {
-    return <Navigate to="/*" />; //  redirige vers une page d'erreur 
-  }
+
 
   return (
     <div className="logement-info">

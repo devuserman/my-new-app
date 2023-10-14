@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types'; // Добавляем импорт PropTypes
+import PropTypes from 'prop-types';
 import './Slideshow.scss';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -34,6 +34,7 @@ const Slideshow = ({ images }) => {
             <>
               <FontAwesomeIcon icon={faChevronLeft} className="prev custom-icon" onClick={previousSlide} />
               <FontAwesomeIcon icon={faChevronRight} className="next custom-icon" onClick={nextSlide} />
+              <p className="carousel-count">{currentSlide + 1}/{totalSlide}</p>
             </>
           )}
         </div>
